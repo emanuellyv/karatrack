@@ -8,4 +8,5 @@ enum Faixa {
     case Roxa;
     case Marrom;
     case Preta;
+    case Mestre;
 }

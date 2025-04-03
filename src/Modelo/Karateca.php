@@ -13,7 +13,7 @@ class Karateca
 
     public function calcularIdade(): int
     {
-        return 2025 - $this->anoNascimento;
-        
+        $idade = 2025 - $this->anoNascimento;
+        return $idade;
     }
 }
