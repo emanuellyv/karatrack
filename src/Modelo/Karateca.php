@@ -1,8 +1,11 @@
 <?php
 
+namespace KaraTrack\Modelo;
+
 class Karateca
 {
-    
+    use Idade;
+
     public function __construct(
         public readonly string $nome,
         public readonly int $anoNascimento,
@@ -11,9 +14,9 @@ class Karateca
     ) {
     }
 
-    public function calcularIdade(): int
-    {
-        $idade = 2025 - $this->anoNascimento;
-        return $idade;
-    }
+    // public function calcularIdade(): int
+    // {
+    //     $idade = 2025 - $this->anoNascimento;
+    //     return $idade;
+    // }
 }

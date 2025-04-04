@@ -6,6 +6,11 @@ require __DIR__ . "/src/Modelo/Dojo.php";
 require __DIR__ . "/src/Modelo/Aluno.php";
 require __DIR__ . "/src/Modelo/Sensei.php";
 
+use KaraTrack\Modelo\Aluno;
+use KaraTrack\Modelo\Sensei;
+use KaraTrack\Modelo\Faixa;
+use KaraTrack\Modelo\Dojo;
+
 // $aluno = new Aluno(
 //     'Emanuelly Valenga',
 //     2002,
@@ -23,3 +28,4 @@ $sensei = new Sensei(
 var_dump($sensei);
 
 $idade = $sensei->calcularIdade($sensei->anoNascimento);
+var_dump($idade);

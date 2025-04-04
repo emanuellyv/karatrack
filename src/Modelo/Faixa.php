@@ -1,5 +1,7 @@
 <?php
 
+namespace KaraTrack\Modelo;
+
 enum Faixa {
     case Branca;
     case Amarela;

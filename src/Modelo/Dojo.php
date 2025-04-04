@@ -1,5 +1,7 @@
 <?php
 
+namespace KaraTrack\Modelo;
+
 enum Dojo {
     case DePaula;
     case Simioni;

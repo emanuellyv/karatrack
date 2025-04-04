@@ -1,5 +1,7 @@
 <?php
 
+namespace KaraTrack\Modelo;
+
 class Aluno extends Karateca
 {
     public function __construct(
