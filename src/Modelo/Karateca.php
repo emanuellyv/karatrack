@@ -4,7 +4,7 @@ namespace KaraTrack\Modelo;
 
 class Karateca
 {
-    use Idade;
+//    use Idade;
 
     public function __construct(
         public readonly string $nome,

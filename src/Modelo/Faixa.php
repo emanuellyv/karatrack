@@ -2,7 +2,8 @@
 
 namespace KaraTrack\Modelo;
 
-enum Faixa {
+enum Faixa
+{
     case Branca;
     case Amarela;
     case Laranja;

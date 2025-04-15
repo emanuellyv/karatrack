@@ -15,7 +15,7 @@ trait Idade
     public function validarAno(int $anoNascimento): void
     {
         if ($anoNascimento < 0) {
-            throw new AnoInvalidoException;
+            throw new AnoInvalidoException();
         }
 
         $this->anoNascimento = $anoNascimento;

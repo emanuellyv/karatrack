@@ -9,8 +9,7 @@ class Aluno extends Karateca
         int $anoNascimento,
         Faixa $faixa,
         Dojo $dojo
-    )
-    {
+    ) {
         parent::__construct($nome, $anoNascimento, $faixa, $dojo);
     }
 }
