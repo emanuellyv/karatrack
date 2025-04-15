@@ -2,21 +2,35 @@
 
 namespace KaraTrack\Modelo;
 
-class Karateca
+abstract class Karateca
 {
-//    use Idade;
+    use Idade;
 
     public function __construct(
-        public readonly string $nome,
-        public readonly int $anoNascimento,
-        public Faixa $faixa,
-        public Dojo $dojo
+        protected readonly string $nome,
+        protected readonly int $anoNascimento,
+        protected Faixa $faixa,
+        protected Dojo $dojo
     ) {
     }
 
-    // public function calcularIdade(): int
-    // {
-    //     $idade = 2025 - $this->anoNascimento;
-    //     return $idade;
-    // }
+    public function getNome(): string
+    {
+        return $this->nome;
+    }
+
+    public function getFaixa(): Faixa
+    {
+        return $this->faixa;
+    }
+
+    public function getDojo(): Dojo
+    {
+        return $this->dojo;
+    }
+
+    public function getAnoNascimento(): int
+    {
+        return $this->anoNascimento;
+    }
 }

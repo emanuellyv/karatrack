@@ -6,24 +6,24 @@ use KaraTrack\Exception\AnoInvalidoException;
 
 trait Idade
 {
-    private int $anoNascimento;
+    private int $ano;
 
     /**
      * @throws AnoInvalidoException Se o ano for negativo
      */
 
-    public function validarAno(int $anoNascimento): void
+    public function validarAno(int $ano): void
     {
-        if ($anoNascimento < 0) {
+        if ($ano < 0) {
             throw new AnoInvalidoException();
         }
 
-        $this->anoNascimento = $anoNascimento;
+        $this->ano = $ano;
     }
 
     public function calcularIdade(): int
     {
-        $idade = 2025 - $this->anoNascimento;
+        $idade = 2025 - $this->ano;
         return $idade;
     }
 }

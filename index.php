@@ -19,14 +19,7 @@ $aluno = new Aluno(
      Faixa::Preta,
      Dojo::DePaula
 );
-var_dump($aluno);
-//$sensei = new Sensei(
-//    'Maurício',
-//    1990,
-//    Faixa::Mestre,
-//    Dojo::DePaula
-//);
-//var_dump($sensei);
-//
-//$idade = $sensei->calcularIdade($sensei->anoNascimento);
-//var_dump($idade);
+
+$aluno->validarAno($aluno->getAnoNascimento());
+echo "Aluno: " . $aluno->getNome() . " - " . $aluno->calcularIdade() . " anos" . PHP_EOL;
+//echo "Faixa: " . $aluno->getFaixa() . " - Dojo: " . $aluno->getDojo() . PHP_EOL;
