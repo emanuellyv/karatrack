@@ -2,7 +2,8 @@
 
 namespace KaraTrack\Modelo;
 
-enum Dojo {
+enum Dojo
+{
     case DePaula;
     case Simioni;
     case Scorpion;
@@ -20,7 +21,6 @@ class Dojo
         public Sensei $senseis
     )
     {
-        
     }
 }
 */

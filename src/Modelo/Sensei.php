@@ -10,6 +10,6 @@ class Sensei extends Karateca
         Faixa $faixa,
         Dojo $dojo,
     ) {
-        parent::__construct($nome, $anoNascimento, $faixa, $dojo);  
+        parent::__construct($nome, $anoNascimento, $faixa, $dojo);
     }
 }
