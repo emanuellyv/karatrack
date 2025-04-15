@@ -20,5 +20,6 @@
     "scripts": {
         "cs": "phpcs --standard=PSR12 src/",
         "phan": "phan --allow-polyfill-parser"
-    }
+    },
+    "bin": "index.php"
 }

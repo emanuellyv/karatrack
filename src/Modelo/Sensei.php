@@ -8,7 +8,7 @@ class Sensei extends Karateca
         string $nome,
         int $anoNascimento,
         Faixa $faixa,
-        Dojo $dojo,
+        Dojo $dojo
     ) {
         parent::__construct($nome, $anoNascimento, $faixa, $dojo);
     }
