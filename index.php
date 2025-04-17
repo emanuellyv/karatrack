@@ -1,11 +1,5 @@
 <?php
 
-//require __DIR__ . "/src/Modelo/Karateca.php";
-//require __DIR__ . "/src/Modelo/Faixa.php";
-//require __DIR__ . "/src/Modelo/Dojo.php";
-//require __DIR__ . "/src/Modelo/Aluno.php";
-//require __DIR__ . "/src/Modelo/Sensei.php";
-
 require_once 'vendor/autoload.php';
 
 use KaraTrack\Modelo\Aluno;
@@ -22,4 +16,5 @@ $aluno = new Aluno(
 
 $aluno->validarAno($aluno->getAnoNascimento());
 echo "Aluno: " . $aluno->getNome() . " - " . $aluno->calcularIdade() . " anos" . PHP_EOL;
-//echo "Faixa: " . $aluno->getFaixa() . " - Dojo: " . $aluno->getDojo() . PHP_EOL;
+echo "Faixa: " . $aluno->getFaixa()->name . " - Dojo: " . $aluno->getDojo()->name . PHP_EOL;
+echo "Campeonato de luta: " . $aluno->getFaixa()->podeLutar();
