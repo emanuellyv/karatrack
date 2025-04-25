@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Gang Of Three';
+    src: url("../fontes/gang-of-three.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kaushan';
+    src: url("../fontes/kaushan.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url("../fontes/anton.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+}

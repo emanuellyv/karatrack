@@ -1,0 +1,202 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.barra-lateral {
+    background-color: rgba(251, 122, 3, 0.1);
+    width: 100%;
+    max-width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: "Gang Of Three", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.logo-perfil {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+h2 {
+    font-family: "Anton", serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Anton", serif;
+    color: #FB7A03;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.menu a {
+    display: flex;
+    align-content: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    color: #072237;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.menu a:hover {
+    background-color: #ffd8ab;
+}
+
+.menu a i {
+    display: flex;
+    align-content: center;
+    font-size: 1.5em;
+}
+
+.menu a.active {
+    background-color: #f4820c;
+    color: white;
+}
+
+.menu a.active i {
+    color: white;
+}
+
+.menu a:last-child {
+    margin-top: 5em;
+    color: #333;
+}
+
+.menu, .menu a i {
+    margin-right: 0.5em;
+    padding-left: 2em;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    font-size: 0.8em;
+    display: block;
+}
+
+.conteudo-principal {
+    flex: 1;
+    padding: 30px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.barra-lista-karatecas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /*background-color: #fbeee2;*/
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.barra-lista-karatecas span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    color: #000000;
+}
+
+.barra-lista-karatecas i {
+    color: #f4820c;
+    cursor: pointer;
+}
+
+.barra-lista-karatecas button {
+    background-color: #f4820c;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 1.5em;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.barra-lista-karatecas button:hover {
+    background-color: #d66e00;
+}
+
+.tabela-karatecas {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.tabela-karatecas thead {
+    background-color: #f5f5f5;
+    color: #aaa;
+    font-weight: 500;
+}
+
+.tabela-karatecas thead th {
+    text-align: left;
+    padding: 12px 16px;
+}
+
+.tabela-karatecas tbody tr {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.tabela-karatecas tbody td {
+    padding: 20px 16px;
+    vertical-align: middle;
+    color: #333;
+}
+
+/* Nome com imagem */
+.tabela-karatecas .com-imagem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.tabela-karatecas .com-imagem img {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Ícones de ações */
+.tabela-karatecas .acoes {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.tabela-karatecas .acoes i {
+    color: #f4820c;
+    margin-left: 12px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.tabela-karatecas .acoes i:hover {
+    color: #d66e00;
+}
